@@ -31,6 +31,6 @@ Before excuting the model, first locate the **makefile** in the FVCOM-2_7-model 
 
 The following command is used to excute the model
 
-$ mpiexec 36 ../FVCOM-2_7-model/chesroms_HFX <file name>
+$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX <file name>
 
 
