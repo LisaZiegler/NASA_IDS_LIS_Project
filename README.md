@@ -1,9 +1,10 @@
-Implementing FVCOM in a Coastal Wetland-Estuarine Interface
+## Implementing FVCOM in a Coastal Wetland-Estuarine Interface
 -----------------------------------------------------------
 
 The physical transport of water, salinity, and temperature in ICM are driven by the hydrodynamic model, FVCOM (Chen et al., 2003; Kim & Khangaonkar, 2012). FVCOM utilizes a terrain following unstructured grid, making it ideally suited for complex coastal bathymetry. In addition, the wetting and drying treatment within FVCOM makes it well suited for applications in the intertidal range (Chen et al., 2008). ICM was coupled to FVCOM for research in the Salish Sea (Khangaonkar et al., 2017; Kim & Khangaonkar, 2012). We have adapted the same modeling system used for work in Chesapeake Bay, MD, USA (Clark et al., 2020) and applied it to Long Island Sound estuary and its major freshwater tributaries. Our scale implementation of FVCOM utilizes 10 sigma layers in the vertical domain, with 14,169 elements and 7,430 nodes in a meso-haline segment of the second major river channel leading into the estuary, the Housatonic River (Figure 1a). The model resolution increases from ~700 m in the main stem of Long Island Sound to ~30 m in the marsh region
 
 [put code to display figure here...]
+![](../../Research_MAIN_work/Housatonic_work/Housatonic_bgc/Figures/bathy_lis.png)
 
 The main goal of this project is to implement this FVCOM model across the entire Long Island Sound estuary, inclduing its tidal marshes. 
 
@@ -29,11 +30,11 @@ Setup directory environment from cbeps servers
 
 Libraries required:
 1. netcdf-3.6
-# Create forcing files
+## Create forcing files
 
 Create your **makefile**
 
-# Finally run the model
+## Finally run the model
 
 Before excuting the model, first locate the **makefile** in the FVCOM-2_7-model folder. Run that file.  
 
