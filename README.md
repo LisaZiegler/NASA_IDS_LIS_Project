@@ -13,11 +13,12 @@ The model allows exploration of the role tidal marshes play in estuary carbon an
 ## About this Repository
 This repository is structured in such a way that anyone who wants to use this tool can easily setup, execute and run FVCOM-ICM models in any coastal system. Each folder will contain a README.md, which will provide more detail. 
 
-Main working folders
+*These are the main working folders you will be using:*
+
 | Name | Description |
 |------|-------------|
-| FVCOM2.7| includes: sourcecode, executable folder (inputs and run.dat executable file)|
-| ICM  | includes: sourcecode, executable folder (inputs and run.dat executable file)|
+| FVCOM2.7- physics| includes: sourcecode, executable folder (inputs and run.dat executable file)|
+| ICM- biogeochemistry  | includes: sourcecode, executable folder (inputs and run.dat executable file)|
 | Toolbox| contains matlab scripts used to make model forcing files and plot model output|
 | INSTALL_modules| these modules need to be installed before running both models. The sourcecode calles on these libraries during model computation|
 
