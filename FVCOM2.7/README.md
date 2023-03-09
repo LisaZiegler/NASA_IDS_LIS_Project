@@ -1,12 +1,19 @@
 ## About this Repository
-This repository is structured in such a way that anyone who wants to use this tool can easily setup, execute and run FVCOM-ICM models in any coastal system. Each folder will contain a README.md, which will provide more detail. 
 
 Main working folders
 | Name | Description |
 |------|-------------|
 
+## Model domain
+Our scale implementation of FVCOM utilizes 10 sigma layers in the vertical domain, with 14,169 elements and 7,430 nodes in a meso-haline segment of the second major river channel leading into the estuary, the Housatonic River. The model resolution increases from ~700 m in the main stem of Long Island Sound to ~30 m in the marsh region.
 
-## **Steps to Running FVCOM on a Unix Server**
+![](./github-figures/mesh_hr.jpeg)
+
+The main goal of this project is to implement this FVCOM model across the entire Long Island Sound estuary, including its tidal marshes. Specifically focusing on assessing changes in estuarine water quality, organic matter cycling. We are currently in phase 1 of seting up the LongIsland Sound model (figure 3).
+
+![](./github-figures/lis_grid.001.jpeg)
+
+## **How to- Running FVCOM on a Unix Server**
 
 **...connecting to cbeps3**
 
@@ -17,13 +24,15 @@ Setup directory environment from cbeps servers
 
 Libraries required:
 1. netcdf-3.6
-## Create forcing files
+
+### Create forcing files
 
 Create your **makefile**
 
-## Finally run the model
+### Finally run the model
 
-Before excuting the model, first locate the **makefile** in the FVCOM-2_7-model folder. Run that file.  
+..Yay you are ready to run!
+
 
 1. Create a screen so that you can run the model in the background and still be able to carry on with other things in the terminal.  
     - lziegler$ **screen -r**
