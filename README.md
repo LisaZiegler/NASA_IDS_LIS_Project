@@ -21,7 +21,8 @@ Main working folders
 | Toolbox| contains matlab scripts used to make model forcing files and plot model output|
 | INSTALL_modules| these modules need to be installed before running both models. The sourcecode calles on these libraries during model computation|
 
-# Information about the data used to force the open and river boundaries for both the Housatonic and Long Island Sound Models
+------
+## Information about the data used to force the open and river boundaries for both the Housatonic and Long Island Sound Models
 
 ## River Boundary Forcing
 
