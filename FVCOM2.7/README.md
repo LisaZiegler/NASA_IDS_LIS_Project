@@ -56,8 +56,7 @@ Setup directory environment from cbeps servers
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
 
-2. Create your main working directory 
-    - This directory will contain the following folders:
+2. Create your main working directory- this directory will contain the following folders:
     1. Inputs
     2. Outputs/netcdf (both these folders will be empty)
     3. run.dat
