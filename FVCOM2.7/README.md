@@ -68,9 +68,9 @@ username$ vi makefile
 
 4. Change the following paths in your *makefile* to point to where modules in *INSTALL_modules* are located in your directory:
 
-> - Flag 4: PARLIB = -L/data/users/lziegler/software/METIS_source -lmetis
-> - Flag 6: IOLIBS =  -L/data/users/lziegler/netcdf-3.6.1-intel/lib  -lnetcdf
-> -         IOINCS =  -I/data/users/lziegler/netcdf-3.6.1-intel/include
+ - Flag 4: PARLIB = -L/data/users/lziegler/software/METIS_source -lmetis
+ - Flag 6: IOLIBS =  -L/data/users/lziegler/netcdf-3.6.1-intel/lib  -lnetcdf
+ -         IOINCS =  -I/data/users/lziegler/netcdf-3.6.1-intel/include
 
 ### Create forcing files
 
