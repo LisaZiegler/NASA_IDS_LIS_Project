@@ -1,10 +1,8 @@
 ## About this Repository
 
-Main working folders
-| Name | Description |
-|------|-------------|
+This repository provides a step-by-step guide on how to setup and run FVCOM successfully on the HPL server, or any other server for that matter. 
 
-## Model domain
+## About the model domain
 Our small scale implementation of FVCOM utilizes 10 sigma layers in the vertical domain, with 14,169 elements and 7,430 nodes in a meso-haline segment of the second major river channel leading into the estuary, the Housatonic River. The model resolution increases from ~700 m in the main stem of Long Island Sound to ~30 m in the marsh region (Figure 1a). The main goal of this project is to implement this FVCOM model across the entire Long Island Sound estuary, including its tidal marshes. Specifically focusing on assessing changes in estuarine water quality, organic matter cycling. We are currently in phase 1 of seting up the Long Island Sound model (figure 1b).
 
 ![](./../github-figures/mesh_hr.jpeg)
@@ -47,7 +45,7 @@ Gay et al. 2004). All the other smaller non-point source rivers will be delt wit
 this is because the WOA (World Ocean Atlas) data would overestimated temperature and salinity (create bias)
 - For the LIS Model the WOA model was used to obtain temperature and salinity. Tides m2 (TPXOv9 model). Weather from NARR (3hr composites)
 
-## **How to- Running FVCOM on a Unix Server**
+## **Running FVCOM on Cbeps3**
 
 **...connecting to cbeps3**
 
@@ -56,8 +54,23 @@ enter password
 
 Setup directory environment from cbeps servers
 
-Libraries required:
-1. netcdf-3.6
+1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
+
+2. Create your main working directory 
+    - This directory will contain the following folders:
+    1. Inputs
+    2. Outputs/netcdf (both these folders will be empty)
+    3. run.dat
+
+3. In the *FVCOM2.7_source* locate the makefile and open it
+
+username$ vi makefile
+
+4. Change the following paths in your *makefile* to point to where modules in *INSTALL_modules* are located in your directory:
+
+> Flag 4: PARLIB = -L/data/users/lziegler/software/METIS_source -lmetis
+> Flag 6: IOLIBS =  -L/data/users/lziegler/netcdf-3.6.1-intel/lib  -lnetcdf
+>         IOINCS =  -I/data/users/lziegler/netcdf-3.6.1-intel/include
 
 ### Create forcing files
 
