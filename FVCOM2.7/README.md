@@ -49,10 +49,10 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 **...connecting to cbeps3**
 
->ssh username@10.1.14.19
+>ssh lziegler@10.1.14.19
 >enter password
 
-Setup directory environment from cbeps servers
+**...Setup directory environment from cbeps servers**
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
 
@@ -71,24 +71,31 @@ username$ vi makefile
  - Flag 6: IOLIBS =  -L/data/users/lziegler/netcdf-3.6.1-intel/lib  -lnetcdf
  - Flag 6: IOINCS =  -I/data/users/lziegler/netcdf-3.6.1-intel/include
 
-### Create forcing files
+... compile the makefile by typing **make** in the command line
 
-Create your **makefile**
+lziegler$ **make**
+
+### Setup your run.dat file (executable file)
+
+This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
 
 ### Finally run the model
 
 ..Yay you are ready to run!
 
-
-1. Create a screen so that you can run the model in the background and still be able to carry on with other things in the terminal.  
-    - lziegler$ **screen -r**
-    - to exit or detach screen **ctrl a+d**
-2. If you dont want to set up a screen, another way to check if your model is still running is:  
-    - lziegler$ **tail -f myrun.log** or **top**
-    - to exit press **ctrl c**
-
 The following command is used to excute the model
 
-$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX <file name>
+lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX <runfile name>
+
+...Example:
+lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX tonic
+
+...to check that the model is running use **tail -f** or **top**
+
+  - lziegler$ **tail -f myrun.log** or **top**
+   - to exit press **ctrl c**
+
+
+
 
 
