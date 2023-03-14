@@ -49,8 +49,8 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 **...connecting to cbeps3**
 
-ssh username@10.1.14.19
-enter password
+>ssh username@10.1.14.19
+>enter password
 
 Setup directory environment from cbeps servers
 
@@ -61,11 +61,11 @@ Setup directory environment from cbeps servers
     2. Outputs/netcdf (both these folders will be empty)
     3. run.dat
 
-3. In the *FVCOM2.7_source* locate the makefile and open it
+3. In the *FVCOM2.7_source* locate the **makefile** and open it
 
 username$ vi makefile
 
-4. Change the following paths in your *makefile* to point to where modules in *INSTALL_modules* are located in your directory:
+4. Change the following paths in your **makefile** to point to where modules in *INSTALL_modules* are located in your directory:
 
  - Flag 4: PARLIB = -L/data/users/lziegler/software/METIS_source -lmetis
  - Flag 6: IOLIBS =  -L/data/users/lziegler/netcdf-3.6.1-intel/lib  -lnetcdf
