@@ -45,7 +45,7 @@ Gay et al. 2004). All the other smaller non-point source rivers will be delt wit
 this is because the WOA (World Ocean Atlas) data would overestimated temperature and salinity (create bias)
 - For the LIS Model the WOA model was used to obtain temperature and salinity. Tides m2 (TPXOv9 model). Weather from NARR (3hr composites)
 
-## **Running FVCOM on Cbeps3**
+## Running FVCOM on Cbeps3
 
 **...connecting to cbeps3**
 
@@ -75,20 +75,20 @@ username$ vi makefile
 
 lziegler$ **make**
 
-### Setup your run.dat file (executable file)
+## Setup your run.dat file (executable file)
 
 This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
 
-### Finally run the model
+## Finally run the model
 
 ..Yay you are ready to run!
 
 The following command is used to excute the model
 
-lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX <runfile name>
+- lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
 
 ...Example:
-lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX tonic
+- lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic**
 
 ...to check that the model is running use **tail -f** or **top**
 
