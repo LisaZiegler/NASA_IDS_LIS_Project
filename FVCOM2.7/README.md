@@ -70,7 +70,7 @@ username$ vi makefile
 
  - Flag 4: PARLIB = -L/data/users/lziegler/software/METIS_source -lmetis
  - Flag 6: IOLIBS =  -L/data/users/lziegler/netcdf-3.6.1-intel/lib  -lnetcdf
- -         IOINCS =  -I/data/users/lziegler/netcdf-3.6.1-intel/include
+ - Flag 6: IOINCS =  -I/data/users/lziegler/netcdf-3.6.1-intel/include
 
 ### Create forcing files
 
