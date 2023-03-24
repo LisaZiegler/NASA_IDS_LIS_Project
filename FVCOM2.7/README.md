@@ -75,9 +75,17 @@ username$ vi makefile
 
 lziegler$ **make**
 
+- ...note: you only need to do this once
+
 ## Setup your run.dat file (executable file)
 
 This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
+
+This file allows you to change the time period the model runs for. 
+
+- ...note: the model is run in 
+
+- ...note: the name you choose to call this file is used at the end of the executable command line when running the model
 
 ## Finally run the model
 
@@ -93,9 +101,7 @@ The following command is used to excute the model
 ...to check that the model is running use **tail -f** or **top**
 
   - lziegler$ **tail -f myrun.log** or **top**
-   - to exit press **ctrl c**
-
-
+  - to exit press **ctrl c**
 
 
 

@@ -1,0 +1,71 @@
+% MakeBathymetryPlot
+%
+% Lisa Ziegler
+% Horn Point Laboratory, UMCES
+% NASA Long Island Sound Project
+% February 2020
+
+% Extract x,y,z from GEBCO bathy file
+mync = '/Users/lisaziegler/Desktop/Tonic_BGC/GEBCO_bathy/gebco_2019_n42.0_s39.0_w-74.5_e-70.0.nc';
+bathy = nc_varget(mync,'elevation');
+bathy_lat = nc_varget(mync,'lat');
+bathy_lon = nc_varget(mync,'lon');
+
+% Subset data
+% Define region of interest
+latlim = [40.5 41.5];
+lonlim = [-74 -71.5];
+
+ilat = bathy_lat >= latlim(1) & bathy_lat <= latlim(2);
+ilon = bathy_lon >= lonlim(1) & bathy_lon <= lonlim(2);
+latb = bathy_lat(ilat);
+lonb = bathy_lon(ilon);
+bathy_sub = bathy(ilat,ilon);
+
+struc = gshhs('gshhs_i.b',latlim,lonlim);
+%==========================================================================
+%% Graphics.
+%
+close all
+
+figure;
+
+set(gcf,'position',[604 629 1469 716],'PaperPositionMode','auto','BackingStore','off','PaperOrientation','landscape');
+m_proj('lambert','long',[-74 -71.5],'lat',[40.5 41.4]);
+set(gcf,'color','w');
+
+%m_pcolor(lonb,latb,bathy_sub);shading flat
+hold on
+
+ vv = [-10,-10]; % m
+    [c,hc] = m_contour(lonb,latb,bathy_sub,vv,'linewidth',1,'LineColor','k');
+     clabel(c,hc,'fontsize',10,'color','k');
+     
+ vv = [-20,-20]; % m
+    [c,hc] = m_contour(lonb,latb,bathy_sub,vv,'linewidth',1,'LineColor','k');
+     
+ vv = [-25,-25]; % m
+    [c,hc] = m_contour(lonb,latb,bathy_sub,vv,'linewidth',1,'LineColor','k');
+     clabel(c,hc,'fontsize',10,'color','k');
+     
+m_gshhs_f('patch',[.7 .7 .7],'edgecolor',[.7 .7 .7]);
+hold on
+m_gshhs_f('color','k');
+m_grid('fontsize',16,'linest','none')
+hold on;
+set(gca,'DataAspectRatio',[1 1 1],'fontsize',18)
+
+caxis([-25 1]);
+colormap(m_colmap('blue',256));
+hbar = colorbar;
+set(hbar,'FontSize',16)
+title(hbar,'(m)')
+
+hold on 
+
+m_plot(lon_big,lat_big,'-k')
+
+%m_northarrow(-71.8,40.7,.2,'type',3,'aspect',0.8);
+
+
+
