@@ -49,21 +49,16 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 **...connecting to cbeps3**
 
->ssh lziegler@10.1.14.19
->enter password
+> ssh lziegler@10.1.14.19 then
+> enter password
 
 **...Setup directory environment from cbeps servers**
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
 
-2. Create your main working directory- this directory will contain the following folders:
-    1. Inputs
-    2. Outputs/netcdf (both these folders will be empty)
-    3. run.dat
+2. In the *FVCOM2.7_source* locate the **makefile** and open it
 
-3. In the *FVCOM2.7_source* locate the **makefile** and open it
-
-username$ vi makefile
+> username$ vi makefile
 
 4. Change the following paths in your **makefile** to point to where modules in *INSTALL_modules* are located in your directory:
 
@@ -73,9 +68,18 @@ username$ vi makefile
 
 ... compile the makefile by typing **make** in the command line
 
-lziegler$ **make**
+> lziegler$ **make**
 
-- ...note: you only need to do this once
+- *...note: you only need to do this once*
+
+3. Create your main working directory- *this directory will contain the following folders:*
+
+| Main working Directory | Description |
+|------------------------|-------------|
+|Inputs                  | contains all forcing files|
+|Output                  | this folder will be empty initially, but contains all model outputs|
+|netcdf                  | this folder is created in the Output folder and contains all netcdf model output|
+|executable file         | run.dat file is the executable file|
 
 ## Setup your run.dat file (executable file)
 
@@ -83,25 +87,25 @@ This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
 
 This file allows you to change the time period the model runs for. 
 
-- ...note: the model is run in 
+- *...note: the model is run in days per second*
 
-- ...note: the name you choose to call this file is used at the end of the executable command line when running the model
+- *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
 
 ## Finally run the model
 
 ..Yay you are ready to run!
 
-The following command is used to excute the model
+*The following command is used to excute the model:*
 
-- lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
+> lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
 
 ...Example:
-- lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic**
+> lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic**
 
 ...to check that the model is running use **tail -f** or **top**
 
-  - lziegler$ **tail -f myrun.log** or **top**
-  - to exit press **ctrl c**
+  > lziegler$ **tail -f myrun.log** or **top**
+  > to exit press **ctrl c**
 
 
 
