@@ -89,7 +89,7 @@ The only things you need to worry about changing are the following:
 1. Paths to the input and output folders
 2. Internal model timestep (computational time to complete one time step) and external runtime (time period you desire to model e.g. 3 days, 1 year etc)
 
-![](./../github-figures/runfile.jpeg)
+![](./../github-figures/runfile1.jpeg)
 - *...note: the model is run in days per second*
 
 - *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
