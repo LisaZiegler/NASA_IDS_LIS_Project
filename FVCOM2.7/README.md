@@ -49,7 +49,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 **...connecting to cbeps3**
 
-> ssh lziegler@10.1.14.19 then
+> ssh lziegler@10.1.14.19 **then**
 > enter password
 
 **...Setup directory environment from cbeps servers**
@@ -90,28 +90,28 @@ This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
 >1. Paths to the input and output folders
 >2. Internal model timestep (computational time to complete one time step) and external runtime (time period you desire to model e.g. 3 days, 1 year etc)
 
-> *Calculating timestep and NSTEP (period of time you want the model to output)*
+Calculating timestep and NSTEP (period of time you want the model to output):
 
-timestep (seconds) = DTE*ISPLIT 
-NSTEP (seconds) = (secs in a day*Julian days)/timestep
+-timestep (seconds) = DTE*ISPLIT 
+-NSTEP (seconds) = (secs in a day*Julian days)/timestep
 
-*Example*
+*Example:*
 Running the model from Jan 1 - Dec 31 2018
 NSTEP = (86400*365)/1
       = 31536000 seconds 
-> *...note: if running during a leap year JD = 366*
+- *...note: if running during a leap year JD = 366*
 
 ![](./../github-figures/runfile1.jpeg)
 
 - *...note: the model currently runs with a timestep of 1sec (DTE = 0.1, ISPLIT = 10). I suggest not changing that as the model becomes unstable and does not run with a DTE*ISPLIT > 1 sec
 
-*Learnt that...*
+*...Learnt that*
 - Bathymetry was the issue
   - the model grid violated Courant Conditions primarily result of shallow intertidal regions neath the mouth of the   estuary. Essentially what this means is that when velocity is higher than the depth, this goes beyond the mathematical calculations and model becomes computational unstable and crashes.
   
   So what is outputed in the logfile is: *** number exceeds format, means that water drains out and prints out free surface depth.
 
-*problem may be addressed by:*
+*...Problem may be addressed by:*
 - smoothing the grid
 - reducing the timestep
 
