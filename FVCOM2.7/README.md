@@ -84,19 +84,41 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 ## Setup your run.dat file (executable file)
 
 This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
+- *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
 
-The only things you need to worry about changing are the following:
-1. Paths to the input and output folders
-2. Internal model timestep (computational time to complete one time step) and external runtime (time period you desire to model e.g. 3 days, 1 year etc)
+*The only things you need to worry about changing are the following:*
+>1. Paths to the input and output folders
+>2. Internal model timestep (computational time to complete one time step) and external runtime (time period you desire to model e.g. 3 days, 1 year etc)
+
+> *Calculating timestep and NSTEP (period of time you want the model to output)*
+
+timestep (seconds) = DTE*ISPLIT 
+NSTEP (seconds) = (secs in a day*Julian days)/timestep
+
+*Example*
+Running the model from Jan 1 - Dec 31 2018
+NSTEP = (86400*365)/1
+      = 31536000 seconds 
+> *...note: if running during a leap year JD = 366*
 
 ![](./../github-figures/runfile1.jpeg)
-- *...note: the model is run in days per second*
 
-- *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
+- *...note: the model currently runs with a timestep of 1sec (DTE = 0.1, ISPLIT = 10). I suggest not changing that as the model becomes unstable and does not run with a DTE*ISPLIT > 1 sec
+
+*Learnt that...*
+- Bathymetry was the issue
+  - the model grid violated Courant Conditions primarily result of shallow intertidal regions neath the mouth of the   estuary. Essentially what this means is that when velocity is higher than the depth, this goes beyond the mathematical calculations and model becomes computational unstable and crashes.
+  
+  So what is outputed in the logfile is: *** number exceeds format, means that water drains out and prints out free surface depth.
+
+*problem may be addressed by:*
+- smoothing the grid
+- reducing the timestep
+
 
 ## Finally run the model
 
-..Yay you are ready to run!
+..You are ready to run!
 
 *The following command is used to excute the model:*
 
