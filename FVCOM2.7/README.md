@@ -25,7 +25,7 @@ the largest freshwater input source
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-<u>**USGS gauge stations used**</u>                                                         
+**<u>USGS gauge stations used</u>**                                                        
 
 |Station name                       | Station number | variable used                   |
 |-----------------------------------|----------------|---------------------------------|
