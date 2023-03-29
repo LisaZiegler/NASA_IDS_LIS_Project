@@ -11,7 +11,7 @@ Our small scale implementation of FVCOM utilizes 10 sigma layers in the vertical
 
 ## Information about the data used to force the open and river boundaries for both the Housatonic and Long Island Sound Models 
 
-## River Boundary Forcing
+## <u> River Boundary Forcing </u>
 *creating these forcings refer to **CreatingINPUTS_readme.md** for more detail*
 
 - The Thames and Connecticut Rivers make up 80% of the freshwater inflow into the sound. With the Connecticut contributing 72%,
@@ -25,7 +25,7 @@ the largest freshwater input source
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-**<u>USGS gauge stations used</u>**                                                        
+**USGS gauge stations used**                                                        
 
 |Station name                       | Station number | variable used                   |
 |-----------------------------------|----------------|---------------------------------|
