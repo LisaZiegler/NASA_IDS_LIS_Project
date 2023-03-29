@@ -27,7 +27,7 @@ These are the princple rivers flowing into the LIS
 |USGS gauge stations used           |                                                   
 |--------------------------------------------------------------------------------------|
 |Station name                       | Station number | variable used                   |
-|-----------------------------------|----------------|---------------------------------|
+|--------------------------------------------------------------------------------------|
 |1. Hudson @ Green Island, Troy Dam | 01358000       | discharge                       |
 |                                   | 01359139       | daily mean temperature 2014-2016|
 |2. Naugatuck @ Beacon Falls        | 01208500       | discharge                       |
