@@ -54,12 +54,12 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 ## Running FVCOM on Cbeps3
 
-**...connecting to cbeps3**
+### ...connecting to cbeps3 
 
 > ssh lziegler@10.1.14.19 **then**
 > enter password
 
-**...Setup directory environment from cbeps servers**
+### ...Setup directory environment from cbeps servers 
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
 
@@ -77,7 +77,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 > lziegler$ **make**
 
-- *...note: you only need to do this once*
+- *...note: you only need to do this once, unless you make changes to the fortran code*
 
 3. Create your main working directory- *this directory will contain the following folders:*
 
@@ -86,9 +86,9 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 |Inputs                  | contains all forcing files|
 |Output                  | this folder will be empty initially, but contains all model outputs|
 |netcdf                  | this folder is created in the Output folder and contains all netcdf model output|
-|executable file         | run.dat file is the executable file|
+|tonic.dat               | run.dat file is the executable file|
 
-## Setup your run.dat file (executable file)
+### Setup your run.dat file (executable file)
 
 This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
 - *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
