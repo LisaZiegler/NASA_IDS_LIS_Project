@@ -17,7 +17,7 @@ Our small scale implementation of FVCOM utilizes 10 sigma layers in the vertical
 - The Thames and Connecticut Rivers make up 80% of the freshwater inflow into the sound. With the Connecticut contributing 72%,
 the largest freshwater input source
 
-These are the princple rivers flowing into the LIS
+**These are the princple rivers flowing into the Long Island Sound:**
 
 1. Hudson River 
 2. Housatonic River (combines Naugatuck and Housatonic Rivers)
@@ -25,7 +25,7 @@ These are the princple rivers flowing into the LIS
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-**USGS gauge stations used**                                                           
+<u>**USGS gauge stations used**</u>                                                         
 
 |Station name                       | Station number | variable used                   |
 |-----------------------------------|----------------|---------------------------------|
