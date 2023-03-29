@@ -24,7 +24,7 @@ These are the princple rivers flowing into the LIS
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-|USGS gauge stations used                                                              |
+|USGS gauge stations used           |                                                   
 |--------------------------------------------------------------------------------------|
 |Station name                       | Station number | variable used                   |
 |-----------------------------------|----------------|---------------------------------|
