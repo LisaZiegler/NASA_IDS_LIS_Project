@@ -24,20 +24,20 @@ These are the princple rivers flowing into the LIS
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-|USGS gauge stations used|
-|-------------------------|
-|Station name| Station number | variable used|
-|------------|----------------|---------------|
-|1. Hudson @ Green Island, Troy Dam| 01358000| discharge|
-|                                  | 01359139| daily mean temperature 2014-2016|
-|2. Naugatuck @ Beacon Falls       | 01208500|discharge|
-|3. Housatonic @ Stevenson         | 01205500|discharge|
-|4. Milford                        | 01200600|temperature|
-|5. Quinnipiac River @ Wallingford | 01196500|discharge & temperature|
-|6. Connecticut @ Thompsonville    | 01127500|discharge & temperature|
-|7. Yantic River @ Yantic          | 01127500|discharge|
-|8. Quinebaug River at Jewett City | 01127000|discharge|
-|9. Shetucket River near Willimantic| 01122500|discharge|
+|USGS gauge stations used                                                              |
+|--------------------------------------------------------------------------------------|
+|Station name                       | Station number | variable used                   |
+|-----------------------------------|----------------|---------------------------------|
+|1. Hudson @ Green Island, Troy Dam | 01358000       | discharge                       |
+|                                   | 01359139       | daily mean temperature 2014-2016|
+|2. Naugatuck @ Beacon Falls        | 01208500       | discharge                       |
+|3. Housatonic @ Stevenson          | 01205500       | discharge                       |
+|4. Milford                         | 01200600       | temperature                     |
+|5. Quinnipiac River @ Wallingford  | 01196500       | discharge & temperature         |
+|6. Connecticut @ Thompsonville     | 01127500       | discharge & temperature         | 
+|7. Yantic River @ Yantic           | 01127500       | discharge                       |
+|8. Quinebaug River at Jewett City  | 01127000       | discharge                       |
+|9. Shetucket River near Willimantic| 01122500       | discharge                       |
 
 For the **Housatonic** model domain a sum of the freshwater discharge was obtained by combining the Naugatuck and the Housatonic Rivers. 
 This was done because there is no gauge station near the head of the Housatonic River, and thus unsure of what that flow might be. 
