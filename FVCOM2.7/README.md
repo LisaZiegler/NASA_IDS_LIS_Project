@@ -24,8 +24,8 @@ These are the princple rivers flowing into the LIS
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-|<td colspan=3>USGS gauge stations used           |                                                   
-|--------------------------------------------------------------------------------------|
+**USGS gauge stations used**                                                           
+
 |Station name                       | Station number | variable used                   |
 |-----------------------------------|----------------|---------------------------------|
 |1. Hudson @ Green Island, Troy Dam | 01358000       | discharge                       |
