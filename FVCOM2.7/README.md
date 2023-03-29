@@ -18,13 +18,15 @@ Our small scale implementation of FVCOM utilizes 10 sigma layers in the vertical
 the largest freshwater input source
 
 **These are the princple rivers flowing into the Long Island Sound:**
+
 1. Hudson River 
 2. Housatonic River (combines Naugatuck and Housatonic Rivers)
 3. Quinnipiac River
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-**USGS gauge stations used**                                                        
+**USGS gauge stations used**  
+
 |Station name                       | Station number | variable used                   |
 |-----------------------------------|----------------|---------------------------------|
 |1. Hudson @ Green Island, Troy Dam | 01358000       | discharge                       |
