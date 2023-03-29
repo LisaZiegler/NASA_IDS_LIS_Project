@@ -9,9 +9,10 @@ Our small scale implementation of FVCOM utilizes 10 sigma layers in the vertical
 
 ![](./../github-figures/lis_grid.001.jpeg)
 
-## Information about the data used to force the open and river boundaries for both the Housatonic and Long Island Sound Models
+## Information about the data used to force the open and river boundaries for both the Housatonic and Long Island Sound Models 
 
 ## River Boundary Forcing
+*creating these forcings refer to **CreatingINPUTS_readme.md** for more detail*
 
 - The Thames and Connecticut Rivers make up 80% of the freshwater inflow into the sound. With the Connecticut contributing 72%,
 the largest freshwater input source
@@ -47,6 +48,7 @@ In terms of the **Long Island Sound** model domain, the same will be done. All r
 *Gay et al. 2004*). All the other smaller non-point source rivers will be delt with as a shoreline, since its contribution to the freshwater flux into the sound is very small (insignificant). 
 
 ## Open Boundary
+*creating these forcings refer to **CreatingINPUTS_readme.md** for more detail*
 
 - For the Housatonic Model a monthly average of temperature, salinity was derived from 9 CT DEEP stations (LISICOS) in the sound,
 this is because the WOA (World Ocean Atlas) data would overestimated temperature and salinity (create bias)
@@ -67,7 +69,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 > username$ vi makefile
 
-4. Change the following paths in your **makefile** to point to where modules in *INSTALL_modules* are located in your directory:
+3. Change the following paths in your **makefile** to point to where modules in *INSTALL_modules* are located in your directory:
 
  - Flag 4: PARLIB = -L/data/users/lziegler/software/METIS_source -lmetis
  - Flag 6: IOLIBS =  -L/data/users/lziegler/netcdf-3.6.1-intel/lib  -lnetcdf
@@ -79,7 +81,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 - *...note: you only need to do this once, unless you make changes to the fortran code*
 
-3. Create your main working directory- *this directory will contain the following folders:*
+4. Create your main working directory- *this directory will contain the following folders:*
 
 | Main working Directory | Description |
 |------------------------|-------------|
@@ -123,7 +125,7 @@ NSTEP = (86400*365)/1
 - reducing the timestep
 
 
-## Finally run the model
+### Finally run the model
 
 ..You are ready to run!
 
