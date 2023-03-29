@@ -58,7 +58,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 ### ...connecting to cbeps3 
 
-> ssh lziegler@10.1.14.19 **then**
+> ssh username@10.1.14.19 **then**
 > enter password
 
 ### ...Setup directory environment from cbeps servers 
@@ -67,7 +67,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 2. In the *FVCOM2.7_source* locate the **makefile** and open it
 
-> username$ vi makefile
+> username$ **vi makefile**
 
 3. Change the following paths in your **makefile** to point to where modules in *INSTALL_modules* are located in your directory:
 
@@ -77,7 +77,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 ... compile the makefile by typing **make** in the command line
 
-> lziegler$ **make**
+> username$ **make**
 
 - *...note: you only need to do this once, unless you make changes to the fortran code*
 
@@ -96,10 +96,10 @@ This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
 - *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
 
 *The only things you need to worry about changing are the following:*
->1. Paths to the input and output folders
+>1. Paths that point to the input and output folders
 >2. Internal model timestep (computational time to complete one time step) and external runtime (time period you desire to model e.g. 3 days, 1 year etc)
 
-Calculating timestep and NSTEP (period of time you want the model to output):
+**Calculating timestep and NSTEP (period of time you want the model to output):**
 
 -timestep (seconds) = DTE*ISPLIT 
 -NSTEP (seconds) = (secs in a day*Julian days)/timestep
@@ -124,19 +124,17 @@ NSTEP = (86400*365)/1
 - smoothing the grid
 - reducing the timestep
 
-
 ### Finally run the model
 
 ..You are ready to run!
 
 *The following command is used to excute the model:*
+> username$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
 
-> lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
-
-...Example:
+*...Example:*
 > lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic**
 
 ...to check that the model is running use **tail -f** or **top**
-
-  > lziegler$ **tail -f myrun.log** or **top**
-  > to exit press **ctrl c**
+*...Example:*
+  > username$ **tail -f myrun.log** or **top**
+  > username$ **ctrl c** (to quit the log screen) 
