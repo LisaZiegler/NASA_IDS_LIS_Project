@@ -25,8 +25,7 @@ the largest freshwater input source
 4. Connecticut River
 5. Thames River (combines Quinebaug, the Shetucket, and the Yantic Rivers)
 
-**USGS gauge stations used**  
-
+***USGS gauge stations used***  
 |Station name                       | Station number | variable used                   |
 |-----------------------------------|----------------|---------------------------------|
 |1. Hudson @ Green Island, Troy Dam | 01358000       | discharge                       |
@@ -81,8 +80,9 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 - *...note: you only need to do this once, unless you make changes to the fortran code*
 
-4. Create your main working directory- *this directory will contain the following folders:*
+4. Create your main working directory 
 
+***this directory will contain the following folders:***
 | Main working Directory | Description |
 |------------------------|-------------|
 |Inputs                  | contains all forcing files|
