@@ -9,12 +9,14 @@ Once you have successful set up your main working directory. In this next part t
 2. Input.zip
 3. Data folder (all data can be found in the folder ***LIS_mainresearch*** located on Storage2 external hard drive on the IMac)
 
-|Data products used|
-|Tides:             ***TPXOv9***|
-|River Discharge:   ***USGS***|
-|Temperature:       ***USGS***| 
-|Weather:           ***NARR 3-day***|
-|Temp/Salt_OBC:     ***CT_DEEP***|
+Data products used to force the model with:
+|Variable       | Product         |
+|---------------|-----------------|
+|Tides          | ***TPXOv9***    |
+|River Discharge| ***USGS***      |
+|Temperature    | ***USGS***      | 
+|Weather        | ***NARR 3-day***|
+|Temp/Salt_OBC  | ***CT_DEEP***   |
 -
 
 Before you begin creating your forcing files, the meshgrid created in *SMS* must first be converted into a format compatible for MATLAB to work with moving forward. The code is found in ***Toolbox/fvcom2_7_toolbox/make_dat_files.m***
