@@ -65,9 +65,9 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
 
-2. In the *FVCOM2.7_source* locate the **makefile** and open it
+2. In the *FVCOM2.7_source* folder locate the **makefile** and open it
 
-> username$ **vi makefile**
+> username@cthulu$ **vi makefile**
 
 3. Change the following paths in your **makefile** to point to where modules in *INSTALL_modules* are located in your directory:
 
@@ -77,7 +77,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 ... compile the makefile by typing **make** in the command line
 
-> username$ **make**
+> username@cthulu$ **make**
 
 - *...note: you only need to do this once, unless you make changes to the fortran code*
 
@@ -92,7 +92,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 ### Setup your run.dat file (executable file)
 
-This is called lziegler/tonic/**tonic.dat** in lziegler cbeps account
+This is called lziegler/tonic/**tonic.dat** in lziegler@10.1.14.19 cbeps3 account
 - *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
 
 *The only things you need to worry about changing are the following:*
@@ -129,12 +129,12 @@ NSTEP = (86400*365)/1
 ..You are ready to run!
 
 *The following command is used to excute the model:*
-> username$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
+> username@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
 
 *...Example:*
-> lziegler$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic**
+> lziegler@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic**
 
 ...to check that the model is running use **tail -f** or **top**
 *...Example:*
-  > username$ **tail -f myrun.log** or **top**
-  > username$ **ctrl c** (to quit the log screen) 
+  > username@cthulu$ **tail -f myrun.log** or **top**
+  > username@cthulu$ **ctrl c** (to quit the log screen) 
