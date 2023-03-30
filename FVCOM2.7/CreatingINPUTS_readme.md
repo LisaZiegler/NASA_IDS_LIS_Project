@@ -30,7 +30,7 @@ cor.dat --> **tonic**_cor.dat
 
 Before you begin creating your forcing files, the meshgrid created in *SMS* must first be converted into a format compatible for MATLAB to work with moving forward. The code is found in ***Toolbox/fvcom2_7_toolbox/make_dat_files.m***
 
-*...note: this is the meshgrid file you will be using for the rest of your pre and post processing*
+*...note: this meshgrid file will be using for the rest of the pre and post processing analysis*
 
 > create the following files...
 
