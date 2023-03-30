@@ -9,6 +9,14 @@ Once you have successful set up your main working directory. In this next part t
 2. Input.zip
 3. Data folder (all data can be found in the folder ***LIS_mainresearch*** located on Storage2 external hard drive on the IMac)
 
+|Data products used|
+|Tides:             ***TPXOv9***|
+|River Discharge:   ***USGS***|
+|Temperature:       ***USGS***| 
+|Weather:           ***NARR 3-day***|
+|Temp/Salt_OBC:     ***CT_DEEP***|
+-
+
 Before you begin creating your forcing files, the meshgrid created in *SMS* must first be converted into a format compatible for MATLAB to work with moving forward. The code is found in ***Toolbox/fvcom2_7_toolbox/make_dat_files.m***
 
 *...note: this is the meshgrid file you will be using for the rest of your pre and post processing*
@@ -20,15 +28,17 @@ These are the forcings related to the meshgrid information:
 |mesh.2dm     | generated meshgrid from *SMS*           | *SMS* application on vmware|
 |mesh.mat     | converted 2dm file to mat file          |*make_dat_files.m*          |
 |tonic_cor.dat| contain lat and lon coordinates of nodes|*make_dat_files.m*          |
-
+|tonic_grd.dat|
+|tonic_dep.dat|
 
 ### Physical Forcings
 ### River Boundary
 The following files will need to be created:
 
-|Name|Description|
-|----|-----------|
-
+|Name              |Description|
+|------------------|-----------|
+|tonic_kelp_map.dat|
+|tonic_riv.dat     |
 
 ### Open Boundary
 The following files will need to be created:
@@ -36,4 +46,5 @@ The following files will need to be created:
 |Name         |Description| matlab script|
 |-------------|-----------|--------------|
 |tonic_obc.dat|           | *make_dat_files.m*|
-
+|tonic_tsobc.dat|
+|tonic_elj_obc.dat|
