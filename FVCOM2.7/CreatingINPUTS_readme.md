@@ -17,7 +17,7 @@ Data products used to force the model with:
 |Temperature    | ***USGS***      | 
 |Weather        | ***NARR 3-day***|
 |Temp/Salt_OBC  | ***CT_DEEP***   |
--
+
 
 Before you begin creating your forcing files, the meshgrid created in *SMS* must first be converted into a format compatible for MATLAB to work with moving forward. The code is found in ***Toolbox/fvcom2_7_toolbox/make_dat_files.m***
 
