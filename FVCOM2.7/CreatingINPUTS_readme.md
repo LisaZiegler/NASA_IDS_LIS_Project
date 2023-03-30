@@ -25,7 +25,7 @@ Before you begin creating your forcing files, the meshgrid created in *SMS* must
 *...note: this is the meshgrid file you will be using for the rest of your pre and post processing*
 
 ***The forcing files related to the meshgrid information:***
-- create the following files...
+> create the following files...
 
 |Name         |Description                              | matlab script/app used     |
 |-------------|-----------------------------------------|----------------------------|
