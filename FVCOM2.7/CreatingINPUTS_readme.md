@@ -22,7 +22,7 @@ Once you have successfully set up your main working directory, in this next part
 > the name used to call the ***run.dat*** file is what the user will insert at the beginning of each named forcing file
 ...that is just how FVCOM identifies and calls each forcing files
 
-*Example*
+*Example:*
 cor.dat --> **tonic**_cor.dat
 
 ### Meshgrid information
