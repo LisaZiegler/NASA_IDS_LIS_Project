@@ -19,12 +19,13 @@ Once you have successfully set up your main working directory, in this next part
 |Weather        | ***NARR 3-day***|
 |Temp/Salt_OBC  | ***CT_DEEP***   |
 
+### Meshgrid information
+> how to process the spatial grid information...
 
 Before you begin creating your forcing files, the meshgrid created in *SMS* must first be converted into a format compatible for MATLAB to work with moving forward. The code is found in ***Toolbox/fvcom2_7_toolbox/make_dat_files.m***
 
 *...note: this is the meshgrid file you will be using for the rest of your pre and post processing*
 
-***The forcing files related to the meshgrid information:***
 > create the following files...
 
 |Name         |Description                              | matlab script/app used     |
@@ -35,18 +36,17 @@ Before you begin creating your forcing files, the meshgrid created in *SMS* must
 |tonic_grd.dat|
 |tonic_dep.dat|
 
-### Physical Forcings
 ### River Boundary
+> create the following files...
 
-***The following files will need to be created:***
 |Name              |Description|
 |------------------|-----------|
 |tonic_kelp_map.dat|
 |tonic_riv.dat     |
 
 ### Open Boundary
+> create the following files...
 
-***The following files will need to be created:***
 |Name         |Description| matlab script|
 |-------------|-----------|--------------|
 |tonic_obc.dat|           | *make_dat_files.m*|
