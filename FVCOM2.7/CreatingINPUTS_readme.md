@@ -19,6 +19,12 @@ Once you have successfully set up your main working directory, in this next part
 |Weather        | ***NARR 3-day***|
 |Temp/Salt_OBC  | ***CT_DEEP***   |
 
+> the name you used to call your ***run.dat*** file is what you will used at the beginning of each named forcing file
+...that is just how FVCOM identifies and calls each forcing files
+
+*Example*
+cor.dat --> **tonic**_cor.dat
+
 ### Meshgrid information
 > how to process the spatial grid information...
 
@@ -39,16 +45,16 @@ Before you begin creating your forcing files, the meshgrid created in *SMS* must
 ### River Boundary
 > create the following files...
 
-|Name              |Description|
-|------------------|-----------|
+|Name              |Description| matlab script used|
+|------------------|-----------|-------------------|
 |tonic_kelp_map.dat|
 |tonic_riv.dat     |
 
 ### Open Boundary
 > create the following files...
 
-|Name         |Description| matlab script|
-|-------------|-----------|--------------|
-|tonic_obc.dat|           | *make_dat_files.m*|
-|tonic_tsobc.dat|
+|Name             |Description| matlab script used|
+|-----------------|-----------|-------------------|
+|tonic_obc.dat    |           | *make_dat_files.m*|
+|tonic_tsobc.dat  |
 |tonic_elj_obc.dat|
