@@ -5,7 +5,7 @@ Once you have successfully set up your main working directory, in this next part
 ## Creating the Forcing Files 
 
 *The following files are required:*
-> download and unzip
+> download and unzip...
 1. Toolbox
 2. Input.zip
 3. Data folder (all data can be found in the folder ***LIS_mainresearch*** located on Storage2 external hard drive on the IMac)
