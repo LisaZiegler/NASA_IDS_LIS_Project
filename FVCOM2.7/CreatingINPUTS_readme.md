@@ -19,7 +19,7 @@ Once you have successfully set up your main working directory, in this next part
 |Weather        | ***NARR 3-day***|
 |Temp/Salt_OBC  | ***CT_DEEP***   |
 
-> the name you used to call your ***run.dat*** file is what you will used at the beginning of each named forcing file
+> the name used to call the ***run.dat*** file is what the user will insert at the beginning of each named forcing file
 ...that is just how FVCOM identifies and calls each forcing files
 
 *Example*
@@ -28,7 +28,7 @@ cor.dat --> **tonic**_cor.dat
 ### Meshgrid information
 > how to process the spatial grid information...
 
-Before you begin creating your forcing files, the meshgrid created in *SMS* must first be converted into a format compatible for MATLAB to work with moving forward. The code is found in ***Toolbox/fvcom2_7_toolbox/make_dat_files.m***
+Before creating the forcing files, the meshgrid created in *SMS* must first be converted into a format compatible for MATLAB to work with moving forward. The code is found in ***Toolbox/fvcom2_7_toolbox/make_dat_files.m***
 
 *...note: this meshgrid file will be using for the rest of the pre and post processing analysis*
 
