@@ -1,11 +1,12 @@
 ## About the Input Folder
 
-Once you have successful set up your main working directory. In this next part the user will learn about the forcings required to run the model and gain the skills to create it these files. Examples of each forcing file can be found in the zipped filled named ***Input.zip***
+Once you have successfully set up your main working directory, in this next part the user will learn about the forcings required to run the model and gain the skills to create it these files. Examples of each forcing file can be found in the zipped filled named ***Input.zip***
 
 ## Creating the Forcing Files 
 
 *The following files are required:*
-1. Download the toolbox
+> download and unzip
+1. Toolbox
 2. Input.zip
 3. Data folder (all data can be found in the folder ***LIS_mainresearch*** located on Storage2 external hard drive on the IMac)
 
