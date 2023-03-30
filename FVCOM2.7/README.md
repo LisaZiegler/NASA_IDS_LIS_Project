@@ -1,17 +1,17 @@
-## About this Repository
+## About This Repository
 
 This repository provides a step-by-step guide on how to setup and run FVCOM successfully on the HPL server, or any other server for that matter. 
 
-## About the model domain
+## About the Model Domain
 Our small scale implementation of FVCOM utilizes 10 sigma layers in the vertical domain, with 14,169 elements and 7,430 nodes in a meso-haline segment of the second major river channel leading into the estuary, the Housatonic River. The model resolution increases from ~700 m in the main stem of Long Island Sound to ~30 m in the marsh region (Figure 1a). The main goal of this project is to implement this FVCOM model across the entire Long Island Sound estuary, including its tidal marshes. Specifically focusing on assessing changes in estuarine water quality, organic matter cycling. We are currently in phase 1 of seting up the Long Island Sound model (figure 1b).
 
 ![](./../github-figures/mesh_hr.jpeg)
 
 ![](./../github-figures/lis_grid.001.jpeg)
 
-## Information about the data used to force the open and river boundaries for both the Housatonic and Long Island Sound Models 
+## Information About the Data Used to Force the Open and River Boundaries for Both the Housatonic and Long Island Sound Models 
 
-## River Boundary Forcing 
+## River Boundary 
 *creating these forcings refer to **CreatingINPUTS_readme.md** for more detail*
 
 - The Thames and Connecticut Rivers make up 80% of the freshwater inflow into the sound. With the Connecticut contributing 72%,
@@ -56,12 +56,12 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 ## Running FVCOM on Cbeps3
 
-### ...connecting to cbeps3 
+### ...Connecting to the HPL-Cbeps3 Server 
 
 > ssh username@10.1.14.19 **then**
 > enter password
 
-### ...Setup directory environment from cbeps servers 
+### ...Setting Up Your Main Working Directory Environment  
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
 
@@ -90,7 +90,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 |netcdf                  | this folder is created in the Output folder and contains all netcdf model output|
 |tonic.dat               | run.dat file is the executable file|
 
-### Setup your run.dat file (executable file)
+### Setup Your *run.dat* File (executable file)
 
 This is called lziegler/tonic/**tonic.dat** in lziegler@10.1.14.19 cbeps3 account
 - *...note: the name you choose to call this file is used at the end of the executable command line when running the model*
@@ -124,7 +124,7 @@ NSTEP = (86400*365)/1
 - smoothing the grid
 - reducing the timestep
 
-### Finally run the model
+### Finally Run the Model
 
 ..You are ready to run!
 
