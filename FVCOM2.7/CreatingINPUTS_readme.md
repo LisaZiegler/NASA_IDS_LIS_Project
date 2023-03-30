@@ -1,4 +1,4 @@
-## About Inputs folder: creating forcing files 
+## About the Input folder: creating forcing files 
 
 Once you have successful set up your main working directory. In this next part the user will learn about the forcings required to run the model and gain the skills to create it these files. Examples of each forcing file can be found in the zipped filled named ***Input.zip***
 
