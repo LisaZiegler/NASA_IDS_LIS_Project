@@ -72,9 +72,9 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 ### Setup Your *wqm_con.npt* File (control file)
 
 *The only things you need to worry about changing are the following:*
->1. Grid information (# of nodes etc.)
->2. Internal model timestep
->3. Paths that point to the inputs and outputs folders
+>1. Grid information (# of nodes etc.) --> highlighted with a <span style="color: red;">blue box</span>
+>2. Internal model timestep --> highlighted with a blue box
+>3. Paths that point to the inputs and outputs folders --> highlighted with a blue box
  
 ![](./../github-figures/Screenshot%202023-04-04%20at%201.35.58%20PM.png)
 ![](./../github-figures/Screenshot%202023-04-04%20at%201.36.33%20PM.png)
