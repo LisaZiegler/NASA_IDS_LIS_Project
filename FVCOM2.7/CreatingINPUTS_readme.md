@@ -39,14 +39,14 @@ Before creating the forcing files, the meshgrid created in *SMS* must first be c
 |mesh.mat     | converted 2dm file to mat file                      | *convert_2dm2mat.m*         |
 |blackwater_flux_map.dat| describes the transects                   | use as is;                  |
 |tonic_cor.dat| x, y, lat coordinates of grid nodes                              | created from *tonic_grd.dat*; create in terminal |
-|tonic_grd.dat| specifies the geometry of the grid elements         | *make_dat_files.m*          |
-|tonic_dep.dat| specifies the geometry x,y,z (depth) @ each element | *make_dat_files.m*          |
+|*tonic_grd.dat| specifies the geometry of the grid elements         | *make_dat_files.m*          |
+|*tonic_dep.dat| specifies the geometry x,y,z (depth) @ each element | *make_dat_files.m*          |
 |tonic_el_ini.dat| obc initial conditions: temp & salt            | use as is; make changes to the header|
 |*tonic_kelp_map.dat| specifies marsh grass and drag by vegetation   | *WetlandForcing.m*         |
 |tonic_riv.dat     | temperature, salinity and discharge @ river boundary |*make_fvcom2_7_rivers.m* |
 |tonic_bfw.dat     | bottom freshwater (groundwater)                | use as is; make changes to the header|
 |tonic_obc.dat     | initial temperature and salinity @ open boundary condition defined; # of nodes, node string # | *make_dat_files.m* |
-|tonic_elj_obc.dat | tidal elevation at a given time point (hourly) at each node of the open boundary| *write_elj_obc.m* |
+|*tonic_elj_obc.dat | tidal elevation at a given time point (hourly) at each node of the open boundary| *write_elj_obc.m* |
 |tonic_its.dat     | initial conditions: temperature & salinity                 | use as is; make changes to the header|
 |tonic_tsobc.dat   | 3 dimensional matrix of temperature and salinit @ open boundary       | *Write_FVCOM_tsobc.m* |
 |tonic_uv_ini.dat  | wind initial conditions                            | use as is; make changes to the header|
@@ -54,7 +54,8 @@ Before creating the forcing files, the meshgrid created in *SMS* must first be c
 |tonic_mc.dat      | surface wind stress--> wind_non-uniform_71875.dat | *make_weather_fvcom2_7.m*|
 |tonic_mc_air.dat  | weather and heat flux variables--> HFX_non_uniform_71875.dat| *make_weather_fvcom2_7.m* |
 
-### - tonic_grd.dat & tonic_dep.dat 
+## Take note when creating the following
+### - *tonic_grd.dat & tonic_dep.dat 
 In the command line:
 > username$ vi mesh.2dm
 
@@ -73,7 +74,7 @@ Print only the last 3 columns that define depth of the elements
 
 ... save as ***tonic_dep.dat***
 
-### -tonic_tides.dat
+### - *tonic_tides.dat
 Files required:
 - lat_lon at each grid node (text file; can obtain this when creating the *cor.dat* forcing
 - time file for the year in which the model is being run for (refer to *write_elj_obc.m*). 
@@ -93,7 +94,7 @@ Run the following in the command line:
 
 *...note: you will use this file to create the **elj_obc.dat** forcing*
 
-### - tonic_kelp_map.dat
+### - *tonic_kelp_map.dat
 
 Data required:
 - mesh.2dm
