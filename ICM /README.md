@@ -7,7 +7,7 @@ This is PART 2, modeling the biogeochemistry. Here you will be using the physics
 ![](./../github-figures/GCReW_Wheeler_Comparison.pptx-3.jpg)
 ![](./../github-figures/GCReW_Wheeler_Comparison.pptx.jpg)
 
-## Information About the Data Used to Force the Open and River Boundaries for Both the Housatonic Model
+## Information About the Data Used to Force the Open and River Boundaries for the Housatonic Model
 
 ## River Boundary 
 *creating these forcings refer to **CreatingINPUTS_readme.md** for more detail*
