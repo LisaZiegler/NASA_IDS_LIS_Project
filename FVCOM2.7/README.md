@@ -126,7 +126,7 @@ NSTEP = (86400*365)/1
 
 ### Finally Run the Model
 
-..You are ready to run!
+...You are ready to run!
 
 *The following command is used to excute the model:*
 > username@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
