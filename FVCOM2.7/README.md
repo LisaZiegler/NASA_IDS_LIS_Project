@@ -58,6 +58,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 ### ...Connecting to the HPL-Cbeps3 Server 
 
 > ssh username@10.1.14.19 **then**
+
 > enter password
 
 ### ...Setting Up Your Main Working Directory Environment  
