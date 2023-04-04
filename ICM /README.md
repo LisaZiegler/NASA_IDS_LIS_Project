@@ -34,6 +34,7 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 ### ...Connecting to the HPL-Cbeps3 Server 
 
 > ssh username@10.1.14.19 **then**
+
 > enter password
 
 ### ...Setting Up Your Main Working Directory Environment  
