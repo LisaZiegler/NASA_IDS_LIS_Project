@@ -23,16 +23,16 @@ Once you have successfully set up your main working directory, in this next part
 
 |Name         |Description                                          | matlab script/app used      |
 |-------------|-----------------------------------------------------|-----------------------------|
-|mineralisation_newDOM.3_yr_8| water quality paramterisation        | use as is |
+|mineralisation_newDOM.3_yr_8| water quality paramterisation        | use as is; make changes directly to file if needed |
 |seddom_control.in| sediment DOM input control file; controls reactions rates of DOM and diffusion to the overlying water column | use as is|
-|wcdom_apqy.npt| apparent quantum yield | use as is|
-|wcdom_control.npt| water column DOM input control file| use as is|
-|wqm_algae.3_yr_7| 
+|wcdom_apqy.npt| apparent quantum yield | use as is; make changes directly to file if needed|
+|wcdom_control.npt| water column DOM input control file| use as is; make changes directly to file if needed|
+|wqm_algae.3_yr_7| algal paramterisation | use as is |
 |wqm_kei_photoDEG_v8_1.csv| specifies water column light absorption| use as is |
-|settling.10_yr_3| 
+|settling.10_yr_3| particulate sinking rate parameterisation | use as is; make changes directly to file if needed |
 |seddom_grid.dat| sediment DOM/marsh grid definition file           | *make_seddom_gridm*|
 |tonic_initial_wq_vert_restart1.dat| specify initial conditions| *write_ICM_initial_ncdf.m*|
 |tonic_met_good.dat| meteorological data (NARR) | *write_metgrid2file.m*|
 |tonic_obc_wq.dat| open boundary water quality conditions| *WQM_OBC_DoCoFVCOM.m*|
-|tonic_pnt_wq.dat| river point source forcing; turned off|
+|tonic_pnt_wq.dat| river point source forcing; turned off| not used|
 |tonic0000_riv.dat| river water quality variables specified| *Write_DoCoFVCOM_rivers.m*|
