@@ -2,7 +2,7 @@
 
 This repository provides a step-by-step guide on how to setup and run ICM successfully on the HPL server, or any other server for that matter. 
 
-This is PART 2, modeling the biogeochemistry. Here you will be using the physics model outputs generated from FVCOM to drive the biogeochemical model. The Rhode River ICM model is taken and applied as is to the Housatonic River model-- with changes made to the forcing files used. Parameters have stayed the same as there was no significant evidence to suggest otherwise (assuming both systems are the same, not much variability in NH4 uptake and total amount of DOM exported from the marsh). Based on GCrew marsh results in the Chesapeake Bay vs the Wheeler Marsh in the Housatonic River, CT (see reference table by A. Menendez)
+This is PART 2, modeling the biogeochemistry. Here you will be using the physics model outputs generated from FVCOM to drive the biogeochemical model. The Rhode River ICM model is taken and applied as is to the Housatonic River model-- with changes made to the input forcing files. Parameters have stayed the same as there was no significant evidence to suggest otherwise (assuming both systems are the same, not much variability in NH4 uptake and total amount of DOM exported from the marsh). Based on GCrew marsh results in the Chesapeake Bay vs the Wheeler Marsh in the Housatonic River, CT (see reference table by A. Menendez)
 
 ![](./../github-figures/GCReW_Wheeler_Comparison.pptx-3.jpg)
 ![](./../github-figures/GCReW_Wheeler_Comparison.pptx.jpg)
