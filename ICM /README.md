@@ -87,11 +87,12 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 ... running ICM is the same as FVCOM
 
 *The following command is used to excute the model:*
-> username@cthulu$ mpiexec -n 36 ../wqmsrc_fvcom2.7/wqm_dom_NCDF **runfile name** 
+> username@cthulu$ mpiexec -n 36 ../wqmsrc_fvcom2.7/wqm_dom_NCDF **runfile name** **2>&1>myrun.log&**
+
+add **2>&1>myrun.log&** at end if you want to create a log file
 
 *...Example:*
-> lziegler@cthulu$ mpiexec -n 36 ../wqmsrc_fvcom2.7/wqm_dom_NCDF **tonic** 2>&1>myrun.log& [add at end if you want to create a log file]
-
+> lziegler@cthulu$ mpiexec -n 36 ../wqmsrc_fvcom2.7/wqm_dom_NCDF **tonic** 
 ...to check that the model is running use **tail -f** or **top**
 *...Example:*
   > username@cthulu$ **tail -f myrun.log** or **top**

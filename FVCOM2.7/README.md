@@ -129,10 +129,12 @@ NSTEP = (86400*365)/1
 ...You are ready to run!
 
 *The following command is used to excute the model:*
-> username@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name**
+> username@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name** **2>&1>myrun.log&**
+
+add **2>&1>myrun.log&** at end if you want to create a log file
 
 *...Example:*
-> lziegler@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic**
+> lziegler@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **tonic** 
 
 ...to check that the model is running use **tail -f** or **top**
 *...Example:*
