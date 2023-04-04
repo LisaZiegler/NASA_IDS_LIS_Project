@@ -19,7 +19,7 @@ This repository is structured in such a way that anyone who wants to use this to
 | Name | Description |
 |------|-------------|
 | FVCOM2.7- physics| includes: sourcecode, executable folder (inputs and run.dat executable file)|
-| ICM- biogeochemistry  | includes: sourcecode, executable folder (inputs and run.dat executable file)|
+| ICM- biogeochemistry  | includes: sourcecode, executable folder (inputs and wqm control file)|
 | Toolbox| contains matlab scripts used to make model forcing files and plot model output|
 | INSTALL_modules| these modules need to be installed before running both models. The sourcecode calles on these libraries during model computation|
 
