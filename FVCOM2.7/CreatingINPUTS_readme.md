@@ -54,23 +54,26 @@ Before creating the forcing files, the meshgrid created in *SMS* must first be c
 |tonic_mc.dat      | surface wind stress--> wind_non-uniform_71875.dat | *make_weather_fvcom2_7.m*|
 |tonic_mc_air.dat  | weather and heat flux variables--> HFX_non_uniform_71875.dat| *make_weather_fvcom2_7.m* |
 
-### *tonic_grd.dat* & *tonic_dep.dat*
+### - tonic_grd.dat & tonic_dep.dat 
 In the command line:
 > username$ vi mesh.2dm
+
 Then remove E3T & ND string columns
 > username$ **% s/E3T//g**
-  username$ **% s/ND//g**
+
+> username$ **% s/ND//g**
 
 ... save as ***tonic_grd.dat***
 
 Open *tonic_grd.dat* created
 > username$ vi tonic_grd.dat
+
 Print only the last 3 columns that define depth of the elements
 > username$ **%'awk'{print $2" "$3" "$4}'
 
 ... save as ***tonic_dep.dat***
 
-### *tonic_tides.dat*
+### -tonic_tides.dat
 Files required:
 - lat_lon at each grid node (text file; can obtain this when creating the *cor.dat* forcing
 - time file for the year in which the model is being run for (refer to *write_elj_obc.m*). 
@@ -78,7 +81,8 @@ Files required:
 1. In the terminal make sure you are in the working directory where the TPXO predict tide model is --> OTPS folder
 Run the following in the command line:
 > username$ **make predict_tide 
-  username$ ./predict_tide -ttimefile2018 <setup.inp
+
+> username$ ./predict_tide -ttimefile2018 <setup.inp
 
 *In the ***setup.inp*** file, change the following:
 - Point 2: insert the name of your lat_lon file
@@ -89,7 +93,7 @@ Run the following in the command line:
 
 *...note: you will use this file to create the **elj_obc.dat** forcing*
 
-### *tonic_kelp_map.dat*
+### - tonic_kelp_map.dat
 
 Data required:
 - mesh.2dm
