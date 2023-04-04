@@ -83,11 +83,13 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 - *...note: the model currently runs with a timestep of 120sec-- timestep at which model does not crash.*
 
 ### Finally Run the Model
-
 ... running ICM is the same as FVCOM
+- once all the forcing files have been created (**CreatingWQM_INPUTS_readme.md**), you are ready to run the model...
 
 *The following command is used to excute the model:*
-> username@cthulu$ mpiexec -n 36 ../wqmsrc_fvcom2.7/wqm_dom_NCDF **runfile name** **2>&1>myrun.log&**
+> username@cthulu$ mpiexec -n **36** ../wqmsrc_fvcom2.7/wqm_dom_NCDF **runfile name** **2>&1>myrun.log&**
+
+- **36** refers to the amount of core processing units (CPU) you allocated to run the model on. Play around with this number. Allocating too many cpu's can cause the model to crash. Ideal number is 24...
 
 add **2>&1>myrun.log&** at end if you want to create a log file
 
