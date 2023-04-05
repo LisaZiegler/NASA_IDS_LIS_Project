@@ -70,7 +70,7 @@ Open *tonic_grd.dat* created
 > username$ vi tonic_grd.dat
 
 Print only the last 3 columns that define depth of the elements
-> username$ **%'awk'{print $2" "$3" "$4}'
+> username$ **%'awk'{print $2" "$3" "$4}'**
 
 ... save as ***tonic_dep.dat***
 
