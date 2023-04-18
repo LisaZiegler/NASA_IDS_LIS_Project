@@ -60,19 +60,25 @@ In the command line:
 > username$ vi mesh.2dm
 
 Then remove E3T & ND string columns
-> username$ **% s/E3T//g**
+> press **esc-key** then **shift + :**
+> copy&paste **% s/E3T//g**---> enter
 
-> username$ **% s/ND//g**
+> copy&paste **% s/ND//g**----> enter
+remove the mesh info header and footer
 
 ... save as ***tonic_grd.dat***
 
-Open *tonic_grd.dat* created
-> username$ vi tonic_grd.dat
+Copy and rename *tonic_grd.dat* to *tonic_dep.dat
+> username$ cp tonic_grd.dat tonic_dep.dat 
+
+Open ***tonic_dep.dat*** 
+> username$ **vi tonic_dep.dat**
 
 Print only the last 3 columns that define depth of the elements
-> username$ **%'awk'{print $2" "$3" "$4}'**
-
-... save as ***tonic_dep.dat***
+In the commandline enter the following
+> username$ **#elements dd** (first remove the element node numbers)
+> username$ **%!awk'{print $2" "$3" "$4}'**
+> username$ **wq!** (save and quit)
 
 ### - *tonic_tides.dat
 Files required:
@@ -90,7 +96,7 @@ Run the following in the command line:
 - Point 8: provide a name for the tide output file
 
 2. Extract the M2 tides
-> username$ **cat *output_name*| awk'{print $3}' >*name_M2_tides_file*
+> username$ **cat *output_name*| awk'{print $3}' >*name_M2_tides_file**
 
 *...note: you will use this file to create the **elj_obc.dat** forcing*
 
