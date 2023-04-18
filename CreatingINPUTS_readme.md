@@ -77,7 +77,9 @@ Open ***tonic_dep.dat***
 Print only the last 3 columns that define depth of the elements
 In the commandline enter the following
 > username$ **#elements dd** (first remove the element node numbers)
+
 > username$ **%!awk'{print $2" "$3" "$4}'**
+
 > username$ **wq!** (save and quit)
 
 ### - *tonic_tides.dat
