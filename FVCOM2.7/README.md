@@ -64,7 +64,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 ### ...Setting Up Your Main Working Directory Environment  
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
-link: [fvcom_github]
+- Link to folder: [fvcom_github]
 
 2. In the *FVCOM2.7_source* folder locate the **makefile** and open it
 
