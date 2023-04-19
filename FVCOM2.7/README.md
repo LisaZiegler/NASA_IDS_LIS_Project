@@ -64,10 +64,11 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 ### ...Setting Up Your Main Working Directory Environment  
 
 1. Copy and unzip *INSTALL_modules* and *FVCOM2.7_source* folders on cbeps
+link: [fvcom_github]
 
 2. In the *FVCOM2.7_source* folder locate the **makefile** and open it
 
-> username@cthulu$ **vi makefile**
+> username$ **vi makefile**
 
 3. Change the following paths in your **makefile** to point to where modules in *INSTALL_modules* are located in your directory:
 
@@ -77,7 +78,7 @@ this is because the WOA (World Ocean Atlas) data would overestimated temperature
 
 ... compile the makefile by typing **make** in the command line
 
-> username@cthulu$ **make**
+> username$ **make**
 
 - *...note: you only need to do this once, unless you make changes to the fortran code*
 
@@ -130,7 +131,7 @@ NSTEP = (86400*365)/1
 ...You are ready to run!
 
 *The following command is used to excute the model:*
-> username@cthulu$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name** **2>&1>myrun.log&**
+> username$ mpiexec -n 36 ../FVCOM-2_7-model/chesroms_HFX **runfile name** **2>&1>myrun.log&**
 
 add **2>&1>myrun.log&** at end if you want to create a log file
 
@@ -139,5 +140,8 @@ add **2>&1>myrun.log&** at end if you want to create a log file
 
 ...to check that the model is running use **tail -f** or **top**
 *...Example:*
-  > username@cthulu$ **tail -f myrun.log** or **top**
-  > username@cthulu$ **ctrl c** (to quit the log screen) 
+  > username$ **tail -f myrun.log** or **top**
+  > username$ **ctrl c** (to quit the log screen) 
+
+
+[fvcom_github]: https://github.com/LisaZiegler/FVCOM-github
