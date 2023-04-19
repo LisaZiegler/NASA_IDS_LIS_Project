@@ -42,7 +42,7 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 1. Copy and unzip *INSTALL_modules* and *wqmsrc_fvcom2.7* folders on cbeps
 - Link to folder:[ICM_github]
 
-2. In the *wqmsrc_fvcom2.7e* folder locate the **makefile** and open it
+2. In the *wqmsrc_fvcom2.7* folder locate the **makefile** and open it
 
 > username@cthulu$ **vi makefile**
 
