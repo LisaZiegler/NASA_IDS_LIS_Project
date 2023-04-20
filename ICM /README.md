@@ -40,8 +40,8 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 ### ...Setting Up Your Main Working Directory Environment  
 
 1. Copy and unzip *INSTALL_modules* and *wqmsrc_fvcom2.7* folders on cbeps
-
-2. In the *wqmsrc_fvcom2.7e* folder locate the **makefile** and open it
+- Link to the folder:[ICM_github]
+2. In the *wqmsrc_fvcom2.7* folder locate the **makefile** and open it
 
 > username@cthulu$ **vi makefile**
 
@@ -102,4 +102,4 @@ add **2>&1>myrun.log&** at end if you want to create a log file
   > username@cthulu$ **ctrl c** (to quit the log screen) 
 
 
-
+[ICM_github]: https://github.com/LisaZiegler/FVCOM-ICM
