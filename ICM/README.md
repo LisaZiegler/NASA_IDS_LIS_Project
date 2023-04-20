@@ -42,7 +42,7 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 1. Copy and unzip *INSTALL_modules* and *wqmsrc_fvcom2.7* folders on cbeps
 - Link to folder:[ICM_github]
 
-2. In the *wqmsrc_fvcom2.7* folder locate the **makefile** and open it
+2. In the *wqmsrc_fvcom2.7e* folder locate the **makefile** and open it
 
 > username@cthulu$ **vi makefile**
 
@@ -95,10 +95,11 @@ Due to sparse data for biogeochemical variables, some variable patterns are cons
 
 add **2>&1>myrun.log&** at end if you want to create a log file
 
+*...Example:*
+> lziegler@cthulu$ mpiexec -n 36 ../wqmsrc_fvcom2.7/wqm_dom_NCDF **tonic** 
 ...to check that the model is running use **tail -f** or **top**
 *...Example:*
   > username@cthulu$ **tail -f myrun.log** or **top**
-  
   > username@cthulu$ **ctrl c** (to quit the log screen) 
 
 
