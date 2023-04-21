@@ -78,7 +78,7 @@ Open ***tonic_dep.dat***
 
 Print only the last 3 columns that define depth of the elements
 In the commandline enter the following
-> **#elements dd** (first remove the element node numbers)
+> **dd** (first remove the element node numbers)
 
 > **%!awk'{print $2" "$3" "$4}'**
 
