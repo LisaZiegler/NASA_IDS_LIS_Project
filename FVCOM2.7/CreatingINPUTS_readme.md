@@ -61,11 +61,13 @@ In the command line:
 
 Then remove E3T & ND string columns
 > press **esc-key** then **shift + :**
-> copy&paste **% s/E3T//g**---> enter
 
-> copy&paste **% s/ND//g**----> enter
+> **% s/E3T//g**
+
+>  **% s/ND//g**
+
 remove the mesh info header and footer
-
+> **dd**
 ... save as ***tonic_grd.dat***
 
 Copy and rename *tonic_grd.dat* to *tonic_dep.dat
@@ -76,9 +78,11 @@ Open ***tonic_dep.dat***
 
 Print only the last 3 columns that define depth of the elements
 In the commandline enter the following
-> username$ **#elements dd** (first remove the element node numbers)
-> username$ **%!awk'{print $2" "$3" "$4}'**
-> username$ **wq!** (save and quit)
+> **#elements dd** (first remove the element node numbers)
+
+> **%!awk'{print $2" "$3" "$4}'**
+
+> **wq!** (save and quit)
 
 ### - *tonic_tides.dat
 Files required:
