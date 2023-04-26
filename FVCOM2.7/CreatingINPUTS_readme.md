@@ -101,7 +101,7 @@ Run the following in the command line:
 - Point 8: provide a name for the tide output file
 
 2. Extract the M2 tides
-> username$ **cat *output_name*| awk'{print $3}' >*name_M2_tides_file**
+> username$ **cat *output_name*| awk'{print $3}' >*name_M2_tides_file***
 
 *...note: you will use this file to create the **elj_obc.dat** forcing*
 
